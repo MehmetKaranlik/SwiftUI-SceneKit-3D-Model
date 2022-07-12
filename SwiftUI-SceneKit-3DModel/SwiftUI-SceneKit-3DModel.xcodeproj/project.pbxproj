@@ -1,0 +1,456 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		465F2FD3287E13290020A033 /* SwiftUI_SceneKit_3DModelApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 465F2FD2287E13290020A033 /* SwiftUI_SceneKit_3DModelApp.swift */; };
+		465F2FD7287E132A0020A033 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 465F2FD6287E132A0020A033 /* Assets.xcassets */; };
+		465F2FDA287E132A0020A033 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 465F2FD9287E132A0020A033 /* Preview Assets.xcassets */; };
+		465F2FE6287E14F50020A033 /* Earth.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 465F2FE0287E14F40020A033 /* Earth.usdz */; };
+		465F2FE7287E14F50020A033 /* Jupiter.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 465F2FE1287E14F40020A033 /* Jupiter.usdz */; };
+		465F2FE8287E14F50020A033 /* Moon.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 465F2FE2287E14F50020A033 /* Moon.usdz */; };
+		465F2FE9287E14F50020A033 /* Venus.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 465F2FE3287E14F50020A033 /* Venus.usdz */; };
+		465F2FEA287E14F50020A033 /* Mars.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 465F2FE4287E14F50020A033 /* Mars.usdz */; };
+		465F2FEB287E14F50020A033 /* Saturn.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 465F2FE5287E14F50020A033 /* Saturn.usdz */; };
+		465F2FF8287E15730020A033 /* 3DView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 465F2FF7287E15730020A033 /* 3DView.swift */; };
+		465F2FFA287E15C50020A033 /* Planet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 465F2FF9287E15C50020A033 /* Planet.swift */; };
+		465F2FFC287E17270020A033 /* ThreeDViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 465F2FFB287E17270020A033 /* ThreeDViewModel.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		465F2FCF287E13290020A033 /* SwiftUI-SceneKit-3DModel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SwiftUI-SceneKit-3DModel.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		465F2FD2287E13290020A033 /* SwiftUI_SceneKit_3DModelApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUI_SceneKit_3DModelApp.swift; sourceTree = "<group>"; };
+		465F2FD6287E132A0020A033 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		465F2FD9287E132A0020A033 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		465F2FE0287E14F40020A033 /* Earth.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = Earth.usdz; sourceTree = "<group>"; };
+		465F2FE1287E14F40020A033 /* Jupiter.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = Jupiter.usdz; sourceTree = "<group>"; };
+		465F2FE2287E14F50020A033 /* Moon.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = Moon.usdz; sourceTree = "<group>"; };
+		465F2FE3287E14F50020A033 /* Venus.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = Venus.usdz; sourceTree = "<group>"; };
+		465F2FE4287E14F50020A033 /* Mars.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = Mars.usdz; sourceTree = "<group>"; };
+		465F2FE5287E14F50020A033 /* Saturn.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = Saturn.usdz; sourceTree = "<group>"; };
+		465F2FF7287E15730020A033 /* 3DView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 3DView.swift; sourceTree = "<group>"; };
+		465F2FF9287E15C50020A033 /* Planet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Planet.swift; sourceTree = "<group>"; };
+		465F2FFB287E17270020A033 /* ThreeDViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreeDViewModel.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		465F2FCC287E13290020A033 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		465F2FC6287E13290020A033 = {
+			isa = PBXGroup;
+			children = (
+				465F2FD1287E13290020A033 /* SwiftUI-SceneKit-3DModel */,
+				465F2FD0287E13290020A033 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		465F2FD0287E13290020A033 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				465F2FCF287E13290020A033 /* SwiftUI-SceneKit-3DModel.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		465F2FD1287E13290020A033 /* SwiftUI-SceneKit-3DModel */ = {
+			isa = PBXGroup;
+			children = (
+				465F2FED287E15010020A033 /* Feature */,
+				465F2FEC287E14FE0020A033 /* Core */,
+				465F2FD8287E132A0020A033 /* Preview Content */,
+			);
+			path = "SwiftUI-SceneKit-3DModel";
+			sourceTree = "<group>";
+		};
+		465F2FD8287E132A0020A033 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				465F2FD9287E132A0020A033 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		465F2FEC287E14FE0020A033 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				465F2FF0287E150D0020A033 /* Resources */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		465F2FED287E15010020A033 /* Feature */ = {
+			isa = PBXGroup;
+			children = (
+				465F2FEF287E15090020A033 /* Product */,
+				465F2FEE287E15040020A033 /* View */,
+			);
+			path = Feature;
+			sourceTree = "<group>";
+		};
+		465F2FEE287E15040020A033 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				465F2FF2287E154A0020A033 /* 3DView */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		465F2FEF287E15090020A033 /* Product */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Product;
+			sourceTree = "<group>";
+		};
+		465F2FF0287E150D0020A033 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				465F2FD2287E13290020A033 /* SwiftUI_SceneKit_3DModelApp.swift */,
+				465F2FD6287E132A0020A033 /* Assets.xcassets */,
+				465F2FF1287E15100020A033 /* Object */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		465F2FF1287E15100020A033 /* Object */ = {
+			isa = PBXGroup;
+			children = (
+				465F2FE0287E14F40020A033 /* Earth.usdz */,
+				465F2FE1287E14F40020A033 /* Jupiter.usdz */,
+				465F2FE4287E14F50020A033 /* Mars.usdz */,
+				465F2FE2287E14F50020A033 /* Moon.usdz */,
+				465F2FE5287E14F50020A033 /* Saturn.usdz */,
+				465F2FE3287E14F50020A033 /* Venus.usdz */,
+			);
+			path = Object;
+			sourceTree = "<group>";
+		};
+		465F2FF2287E154A0020A033 /* 3DView */ = {
+			isa = PBXGroup;
+			children = (
+				465F2FF5287E15550020A033 /* Model */,
+				465F2FF4287E15510020A033 /* ViewModel */,
+				465F2FF3287E154E0020A033 /* View */,
+			);
+			path = 3DView;
+			sourceTree = "<group>";
+		};
+		465F2FF3287E154E0020A033 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				465F2FF7287E15730020A033 /* 3DView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		465F2FF4287E15510020A033 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				465F2FFB287E17270020A033 /* ThreeDViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		465F2FF5287E15550020A033 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				465F2FF9287E15C50020A033 /* Planet.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		465F2FCE287E13290020A033 /* SwiftUI-SceneKit-3DModel */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 465F2FDD287E132A0020A033 /* Build configuration list for PBXNativeTarget "SwiftUI-SceneKit-3DModel" */;
+			buildPhases = (
+				465F2FCB287E13290020A033 /* Sources */,
+				465F2FCC287E13290020A033 /* Frameworks */,
+				465F2FCD287E13290020A033 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "SwiftUI-SceneKit-3DModel";
+			productName = "SwiftUI-SceneKit-3DModel";
+			productReference = 465F2FCF287E13290020A033 /* SwiftUI-SceneKit-3DModel.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		465F2FC7287E13290020A033 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1400;
+				LastUpgradeCheck = 1400;
+				TargetAttributes = {
+					465F2FCE287E13290020A033 = {
+						CreatedOnToolsVersion = 14.0;
+					};
+				};
+			};
+			buildConfigurationList = 465F2FCA287E13290020A033 /* Build configuration list for PBXProject "SwiftUI-SceneKit-3DModel" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 465F2FC6287E13290020A033;
+			productRefGroup = 465F2FD0287E13290020A033 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				465F2FCE287E13290020A033 /* SwiftUI-SceneKit-3DModel */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		465F2FCD287E13290020A033 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				465F2FE6287E14F50020A033 /* Earth.usdz in Resources */,
+				465F2FE7287E14F50020A033 /* Jupiter.usdz in Resources */,
+				465F2FE8287E14F50020A033 /* Moon.usdz in Resources */,
+				465F2FE9287E14F50020A033 /* Venus.usdz in Resources */,
+				465F2FEA287E14F50020A033 /* Mars.usdz in Resources */,
+				465F2FEB287E14F50020A033 /* Saturn.usdz in Resources */,
+				465F2FDA287E132A0020A033 /* Preview Assets.xcassets in Resources */,
+				465F2FD7287E132A0020A033 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		465F2FCB287E13290020A033 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				465F2FFC287E17270020A033 /* ThreeDViewModel.swift in Sources */,
+				465F2FFA287E15C50020A033 /* Planet.swift in Sources */,
+				465F2FF8287E15730020A033 /* 3DView.swift in Sources */,
+				465F2FD3287E13290020A033 /* SwiftUI_SceneKit_3DModelApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		465F2FDB287E132A0020A033 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		465F2FDC287E132A0020A033 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		465F2FDE287E132A0020A033 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"SwiftUI-SceneKit-3DModel/Preview Content\"";
+				DEVELOPMENT_TEAM = 348T9RAC33;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.meatlanosrep.SwiftUI-SceneKit-3DModel";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		465F2FDF287E132A0020A033 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"SwiftUI-SceneKit-3DModel/Preview Content\"";
+				DEVELOPMENT_TEAM = 348T9RAC33;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.meatlanosrep.SwiftUI-SceneKit-3DModel";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		465F2FCA287E13290020A033 /* Build configuration list for PBXProject "SwiftUI-SceneKit-3DModel" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				465F2FDB287E132A0020A033 /* Debug */,
+				465F2FDC287E132A0020A033 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		465F2FDD287E132A0020A033 /* Build configuration list for PBXNativeTarget "SwiftUI-SceneKit-3DModel" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				465F2FDE287E132A0020A033 /* Debug */,
+				465F2FDF287E132A0020A033 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 465F2FC7287E13290020A033 /* Project object */;
+}
